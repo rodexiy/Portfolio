@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0   ;
+}
+:root{
+    --corDeFundo: rgb(17, 28, 57);
+    --corDeTextoPadrao: rgb(255,255,255);
+    --corSecundaria: #f0f0f0;
+    --corTomAzul: rgb(22, 41, 109);
+    --corTomVerde: rgb(117, 216, 30);
+    --fonte-primaria: 'Bebas Neue', cursive;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    align-items: center;
+}
+
+body{
+    background-color: var(--corDeFundo);
+}
+
+.cabecalho_menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.cabecalho_menu a{
+    color: var(--corTomVerde);
+    font-family: var(--fonte-primaria);
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.cabecalho_menu li {
+    margin: 0 1rem;
+}
+
+#divlogo img {
+    height: 5rem;
+}
+
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 5% 15%;
+}
+
+.apresentacao_conteudo {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.apresentacao_conteudo_titulo {
+    font-size: 2rem ;
+    font-family: var(--fonte-primaria);
+    color: var(--corDeTextoPadrao);
+}
+
+.destaque{
+    color: var(--corTomVerde);
+}
+
+.apresentacao_conteudo_texto{
+    font-size: 1.2rem;
+    font-family: var(--fonte-secundaria);
+    color: var(--corDeTextoPadrao);
+}
+
+.apresentacao_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.apresentacao_links_titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+}
